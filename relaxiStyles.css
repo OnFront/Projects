@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+body{
+    font-family: 'Montserrat';
+}
+
 #grid{
     display: grid;
     column-gap: 25px;
-    position: absolute;
+    position: fixed;
     top: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -38,32 +42,56 @@ input:checked+#grid{
     font-size: 16px;
 }
 
-li, a, p{
-    font-family: Montserrat;
+li, p{
+    font-size: 1em;
+    letter-spacing: 0.09em;
+    line-height: 2em;   
+}
+
+p{
+    margin-top: 2em;
+}
+
+a{
     font-size: 1.1em;
     letter-spacing: 0.09em;
     line-height: 1.4em;
-    
 }
 
-h1, h2, h3, h4, h5{
-    font-family: Montserrat;
+
+ h2, h3, h4, h5{
     letter-spacing: 0.09em;
-    line-height: 1.3em;
+    line-height: 2em;
+}
+
+.p-main{
+    margin-top: 0 !important;
+    line-height: .9em !important;
 }
 
 h1{
     color: white;
     font-size: 3.5em;
+    letter-spacing: 0.09em;
+    line-height: 1.6em;
+}
+
+h3{
+    color: #34BAAA;
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 1.875em;
 }
 
 header{
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100px;
     padding: 25px 50px 25px 50px;
-  
 }
 
 .logo{
@@ -108,7 +136,6 @@ hr{
 
 .main_container{
     margin-top: 100px;
-    /* padding-top: 25px; */
     padding-bottom: 100px;
     background: rgba(60, 60, 60, 0.3);
     width: 100%;
@@ -137,7 +164,6 @@ hr{
     color: #ffff;
     border-radius: 50px;
     border-style: none;
-    font-family: 'montserrat';
     letter-spacing: 0.1em;
     font-size: 1.1em; 
     font-weight: lighter;
@@ -159,22 +185,169 @@ hr{
     list-style-type: none;  
 }
 
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+    animation: move 1s infinite alternate; 
+}   
+
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
 /* ABOUT SECTION */
 
 .about{
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 #about-img{
    
     object-fit: cover;
     object-position: 0 0;
-    width: 30vw;
+    width: 29.7vw;
     height: 100%;
-    z-index: -5;
+    z-index: -1;
 }
+
 .about-right-container{
-    position: relative;
-    right: 150px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+/* .about-right-container p{
+    margin-top: 2em;
+} */
+
+.btn-services{
+    height: 50px;
+    width: 140px;
+    background-color: #DCAE1D;
+    color: #ffff;
+    border-radius: 50px;
+    border-style: none;
+    letter-spacing: 0.1em;
+    font-size: 1.1em; 
+    font-weight: lighter;
+    margin-top: 2em;
+}
+
+.underline{
+    padding: 0;
+    margin: 1em 0 0 0;
+    width: 75px;
+    border: 4px solid #34BAAA;
+}
+
+/* .skew-right{
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: #34BAAA;
+    z-index: 5;
+    position: absolute;
+    top: 1280px;
+    transform: skewY(-5deg);
+    border-top-left-radius: 80px;
+}
+
+.skew-right::before{
+    
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: #34BAAA;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    z-index: -2;
+}
+
+.skew-right::after{
+    content: "";
+    height: 80px;
+    width: 80px;
+    background-color: #ffff;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+} */
+object{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+/* 
+#skewlr{
+   
+    position: absolute;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 5;
+ 
+    
+
+} */
+
+.ourServices{
+    background-color: #F0F5F5;
+    padding-top: 5%;
+}
+
+.ourServices section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+}
+
+.offer-flex{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box1{
+    height: 60vh;
+    width: 25vw;
+    border: 1px solid black;
+    background-color: #ffff;
+    border-radius: 25px;
+}
+
+.box2{
+    height: 60vh;
+    width: 25vw;
+    border: 1px solid black;
+    background-color: #ffff;
+
+}
+
+.box3{
+    height: 60vh;
+    width: 25vw;
+    border: 1px solid black;
+    background-color: #ffff;
+}
+
+
+
