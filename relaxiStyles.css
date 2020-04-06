@@ -228,9 +228,6 @@ hr{
     align-items: flex-start;
 }
 
-/* .about-right-container p{
-    margin-top: 2em;
-} */
 
 .btn-services{
     height: 50px;
@@ -306,6 +303,8 @@ object{
 
 } */
 
+/* SERVICES SECTION */
+
 .ourServices{
     background-color: #F0F5F5;
     padding-top: 5%;
@@ -318,36 +317,57 @@ object{
     height: 30vh;
 }
 
-.offer-flex{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: row;
+/* cards grid */
+
+.cards{
+    padding: 5% 50px 5% 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 23vw));
     justify-content: space-evenly;
-}
+} 
 
-.box1{
-    height: 60vh;
-    width: 25vw;
-    border: 1px solid black;
-    background-color: #ffff;
+.card{
+    display: grid;
+    grid-template-columns: minmax(auto, 23vw);
     border-radius: 25px;
-}
-
-.box2{
-    height: 60vh;
-    width: 25vw;
-    border: 1px solid black;
     background-color: #ffff;
-
+    box-shadow: 5px 5px rgba(133, 123, 123, 0.1); 
 }
 
-.box3{
-    height: 60vh;
-    width: 25vw;
-    border: 1px solid black;
-    background-color: #ffff;
+.card-image1 img{
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 120px;
+    border-bottom: 10px solid #34BAAA;
 }
 
+.card-image2 img{
+    display: block;
+    width: 100%;
+    border-bottom: 10px solid #34BAAA;
+}
 
+.card-image3 img{
+    display: block;
+    width: 100%;
+    border-bottom: 10px solid #34BAAA;
+    border-bottom-right-radius: 120px;
+}
+
+.card-text{
+    text-align: center;
+    margin-top: 2em;
+    padding: 0 5% 0 5%;
+}
+
+.card-fig-links{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.card-fig-links a{
+    text-decoration: none;
+    color: #34BAAA;
+}
 
