@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat';
 }
 
-#grid{
+/* #grid{
     display: grid;
     column-gap: 25px;
     position: fixed;
@@ -29,7 +29,7 @@ body{
 
 input:checked+#grid{
     display: grid;
-}
+} */
 
 
 *, *::before, *::after {
@@ -62,6 +62,7 @@ a{
  h2, h3, h4, h5{
     letter-spacing: 0.09em;
     line-height: 2em;
+    
 }
 
 .p-main{
@@ -84,6 +85,7 @@ h3{
 
 h2{
     font-size: 1.875em;
+    padding-bottom: 18px;
 }
 
 header{
@@ -212,7 +214,7 @@ hr{
 }
 
 #about-img{
-   
+    
     object-fit: cover;
     object-position: 0 0;
     width: 29.7vw;
@@ -243,19 +245,11 @@ hr{
 }
 
 .underline{
-    padding: 0;
-    margin: 1em 0 0 0;
+    /* padding: 0; */
+    margin-top: 2em 0 0 0;
     width: 75px;
-    border: 4px solid #34BAAA;
+    border: 5px solid #34BAAA;
 }
-
-object{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-}
-
 
 /* SERVICES SECTION */
 
@@ -324,4 +318,290 @@ object{
     text-decoration: none;
     color: #34BAAA;
 }
+
+.ourMission{
+    padding: 5% 25px 5% 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25vw;
+    justify-content: space-evenly;
+
+    
+}
+
+.ourMission-left-container{
+   position: relative;
+   margin: 0;
+   top: -23vh;
+   
+}  
+.picture-container{
+    position: relative;
+    width: 20vw; 
+    height: 300px;  
+    width: 0, auto;
+}
+
+#map{
+    display: block;
+    width: 100%;
+}
+
+.circle{
+    display: block;
+    position: relative;
+    top: 45vh;
+    right: 4vw;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #34BAAA;
+    color: #FFFF;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.circle p{
+    text-align: center;
+    padding-top: 40%;
+    padding-bottom: 25%;
+}
+
+.ourMission-right-container{
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   width: 33vw;
+}
+
+.ourMission-right-container button{
+    margin-top: 2em;
+    height: 45px;
+    width: 200px;
+    background-color: #DCAE1D;
+    color: #ffff;
+    border-radius: 50px;
+    border-style: none;
+    letter-spacing: 0.1em;
+    font-size: 1.1em; 
+    font-weight: lighter;
+}
+
+.OurTeam{
+    background-color: #F0F5F5;
+    padding: 5% 50px 5% 50px;
+}
+
+.OurTeam section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.people-grid{
+    padding: 5% 50px 5% 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 23vw));
+    justify-content: space-evenly;
+}
+
+.person{
+    display: grid;
+    grid-template-columns: minmax(auto, 23vw);
+    border-radius: 5px;
+    background-color: #ffff;
+    box-shadow: 5px 4px rgba(133, 123, 123, 0.1); 
+}
+
+.person img{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.name{
+    text-align: center;
+    padding: 1em 0 2em 0;
+    font-weight: 500;
+}
+
+.bookings{
+    padding: 5% 50px 5% 50px;
+}
+
+.bookings section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.bookings{ 
+    padding: 5% 0 5% 0;
+}
+
+.offer{
+    background: url(pictures/city-backgrnd.png) no-repeat;
+    background-size : 100%;
+    background-position-y: -60px;
+    margin-top: 2em;
+    padding: 4em 0 4em 0;
+}
+
+.service-select{
+    position: relative;
+    display: block;
+    left: 33%;
+    background-color: #ffff !important;
+    height: 7vh; 
+    min-width: 35vw;
+    border-radius: 20px;
+    padding-left: 1%;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+   
+    display: block;
+    margin: 0;
+    background: url(icons/select-btn.png) no-repeat 95% center;
+    background-size: 3%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+
+    font-family: 'Montserrat';
+}
+
+#customerAddress{
+    position: relative;
+    margin-top: 2em;
+    left: 33%;
+    height: 7vh; 
+    min-width: 35vw;
+    padding-left: 1%;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    border-style: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+#btn-offer{
+    position: relative;
+    left: 43vw;
+    top: -43px;
+}
+
+
+.happy-clients{
+    padding: 0 50px 5% 50px;
+    background: url(pictures/woman-phone.png) no-repeat;
+}
+
+.happy-clients-header{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.clients-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    padding-top: 2em;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2em 0 2em 0;
+    background-color: #F0F5F5;
+    z-index: 5;
+}
+
+
+.quote-icon{
+    position: relative;
+    height: 20px;
+    width: auto;
+}
+
+.client-img{
+    position: relative;
+    height: 70px;
+    width: auto;
+    border: 2px solid rgba(52, 186, 170, 0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.underline-testimonials{
+   width: 50px;
+   border: 2px solid rgba(0,0,0, 0.15);
+   margin: 0 0 2em 0;
+}
+.quote-text{
+    height: 110px;
+    font-size: .6em;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+   
+} 
+
+.client-name{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: .7em;
+    margin-top: 1em !important;
+}
+/* 
+.skew{
+ 
+    position: relative;
+    background: #34BAAA;
+    bottom: -250px;
+    transform: skewY(2deg);
+    z-index: 0;
+    overflow: hidden;
+} */
+
+.contactSection{
+    position: relative;
+    bottom: 120px;
+    background-color: #34BAAA;
+    text-align: center;
+    transform: skewY(2deg);
+}
+
+.contact-text{
+    color: #fff;
+}
+
+.contactSection-header{
+    padding: 10% 0 5% 0;
+    transform: skewY(-2deg);
+}
+
+.contactSection::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    bottom: -20px;
+    left: 0;
+    background-color: red;
+    transform: skewY(-2deg);
+    z-index: -2;
+}
+
+
+
+
+
 
