@@ -556,23 +556,11 @@ hr{
     font-size: .7em;
     margin-top: 1em !important;
 }
-/* 
-.skew{
- 
-    position: relative;
-    background: #34BAAA;
-    bottom: -250px;
-    transform: skewY(2deg);
-    z-index: 0;
-    overflow: hidden;
-} */
 
 .contactSection{
     position: relative;
-    /* bottom: 120px; */
     background-color: #34BAAA;
     text-align: center;
-    /* transform: skewY(2deg); */
 }
 
 .contact-text{
@@ -618,7 +606,7 @@ hr{
    
 }
 
-.contact-form{ 
+.contactForm{ 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
@@ -634,13 +622,13 @@ hr{
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
-.contact-form input, textarea{
+.contactForm input, textarea{
     background-color: #F0F5F5;
     border-style: none;
     
 }
 
-.contact-form input{
+.contactForm input{
     height: 30px;
     padding-left: 1em;
     font-size: .8em;
@@ -653,7 +641,7 @@ hr{
     text-align: left;
 }
 
-.contact-form label{
+.contactForm label{
     padding-bottom: 1em;
     
 }
@@ -675,8 +663,10 @@ textarea{
 }
 
 .btn-send{
+    
     position: relative;
-    top: -23px;
+    left: 80%;
+    top: -35px;
     height: 45px;
     width: 140px;
     background-color: #DCAE1D;
@@ -686,6 +676,7 @@ textarea{
     letter-spacing: 0.1em;
     font-size: 1.1em; 
     font-weight: lighter;
+    
 }
 
 .contact-icons{
