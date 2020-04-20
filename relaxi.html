@@ -238,10 +238,10 @@
             <h2>Send us a message</h2>
         </div>  
         <div class="contact-form-wrapper">
-            <div class="contact-form">
+            <form class="contactForm">
                 <div class="your-name">
                     <label>Name*</label>
-                    <input type="text" name="" value="" placeholder="Enter Your Name">
+                    <input type="text" name="" value="" placeholder="Enter Your Name" required>
                 </div>    
                 <div class="your-surname">
                     <label>Surname</label>
@@ -249,19 +249,20 @@
                 </div>    
                 <div class="email">
                     <label>E-mail*</label>
-                    <input type="text" name="" value="" placeholder="Enter Your e-mail">
+                    <input type="e-mail" value="" placeholder="Enter Your e-mail" required>
                 </div>    
                 <div class="phone-number">
                     <label>Phone number</label>
-                    <input type="text" name="" value="" placeholder="Enter Your phone number">
+                    <input type="number" name="" value="" placeholder="Enter Your phone number">
                 </div>  
                 <div class="full-width">
                     <label>Your message</label>
                     <textarea placeholder="Please, be polite :)"></textarea>
                 </div>     
-            </div>        
+                <button type="submit" class="btn-send">Send</button>
+            </form>        
         </div> 
-        <button type="button" class="btn-send">Send</button>
+        
         <div class="contact-icons">
             <div class="contact-box">
                 <img src="icons/phone-circle.svg">
@@ -308,4 +309,5 @@
           </div>
             
     </footer>
+    <script src = "relaxi.js"></script>
 </body>
